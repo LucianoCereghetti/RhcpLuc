@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title> Contacto-Red Hot Chili Peppers</title> <!--Nombre de ventana -->
+</head>
+<body>   
+    <header>
+        <div class="sec-center">
+          <input class="dropdown" type="checkbox" id="dropdown" name="dropdown" />
+          <label class="for-dropdown" for="dropdown"
+            >Menu <i class="uil uil-arrow-down"></i
+          ></label>
+          <div class="section-dropdown">
+            <a class="aul" href="index.html">Inicio</a>
+            <a class="aul" href="galeria.html">Fotos</a>
+            <a class="aul" href="videos.html">Videos</a>
+            <a class="aul" href="informacion.html">Información</a>
+            <a class="aul" href="contacto.html">Contacto</a>
+          </div>
+        </div>
+      </header>
+    
+       
+
+      <div class="contact">
+        
+        <form id="form">
+            <!-- Nombre -->
+            <label for="name">Ingrese su nombre:</label>
+            <input type="text" name="nombre" placeholder="Luciano" id="nombre" required> <br><br>
+            <!-- Email -->
+            <label for="email">Ingrese su email:</label>
+            <input type="email" name="correo" placeholder="ejemplo@email.com" id="correo" required><br><br>
+            <!-- Mensaje -->
+            <label for="mensaje">Ingrese su mensaje:</label> <br>
+            <textarea name="mensaje" cols="30" rows="10" placeholder="Hola, deje su mensaje." id='mensaje'
+                required></textarea><br><br>
+            <!-- Boton -->
+            <input type="submit" id="button" value="Enviar mensaje">
+        </div>
+
+    </main>
+    
+    
+
+    <div class="googlemaps">
+    
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13105.828244085555!2d-58.159986033898925!3d-34.79444117985769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a327b3a8440f2b%3A0xa30e6e198e38547f!2sCountry%20Las%20Acacias%20de%20Hudson!5e0!3m2!1ses-419!2sar!4v1645657576870!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+    </div>
+
+   
+
+    <div id="footer">
+      <p class="textofooter">Creado por el alumno Luciano Cereghetti de la comisión 28135 de CoderHouse.</p>
+      </div>
+   
+                 <script type="text/javascript"
+                     src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+                 <script type="text/javascript">
+                        emailjs.init('user_hT3oauaX8Wy4wLfJK6nbY')
+                </script>
+
+                <script>
+                    const btn = document.getElementById('button');
+                    const nombre = document.getElementById('nombre');
+                    const correo = document.getElementById('correo');
+                    const mensaje = document.getElementById('mensaje');
+
+                document.getElementById('form')
+                .addEventListener('submit', function(event) {
+                event.preventDefault();
+
+                btn.value = 'Enviando...';
+
+                const serviceID = 'default_service';
+                const templateID = 'template_xx8eubj';
+
+                emailjs.sendForm(serviceID, templateID, this)
+                    .then(() => {
+                    btn.value = 'Enviar mensaje';
+                    alert('Enviado');
+                    nombre.value = '';
+                    correo.value = '';
+                    mensaje.value = '';
+                    }, (err) => {
+                    btn.value = '';
+                    alert(JSON.stringify(err));
+                    });
+                });
+                </script>
+
+               
+               
+
+</body>
+</html>
