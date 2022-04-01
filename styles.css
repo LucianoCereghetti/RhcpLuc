@@ -29,7 +29,7 @@ body {
           justify-content: flex-start;
   padding-top: 10px;
   padding-bottom: 300px;
-  background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c9f7602b-c795-4c5e-9d6d-9c9a5a1d7296/da6g53v-380d5e3e-846a-492e-b3e8-dfceeb7d3076.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2M5Zjc2MDJiLWM3OTUtNGM1ZS05ZDZkLTljOWE1YTFkNzI5NlwvZGE2ZzUzdi0zODBkNWUzZS04NDZhLTQ5MmUtYjNlOC1kZmNlZWI3ZDMwNzYuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.21JaboxgxZJ2PunQu9n1FMoyDLwJSMu7XGggjtZ9wls);
+  background-image: url(https://media1.giphy.com/media/WiFW385Xj52A4qPgmS/giphy.gif?cid=790b7611be582ac1503baf3c8023c29c6b5c7913e795a343&rid=giphy.gif&ct=g);
   background-size: cover;
   height: 100vh;
   width: 100vw;
@@ -58,7 +58,7 @@ body {
   clear: none;
   width: 100%;
   height: 25px;
-  background-color: linear-gradient(138deg, red 0%, rgba(240, 39, 39, 0.969608) 20%, rgba(199, 35, 35, 0.972409) 38%, rgba(201, 47, 30, 0.930392) 56%, rgba(220, 2, 2, 0.751121) 74%, rgba(255, 0, 0, 0.535434) 96%);
+  background: linear-gradient(158deg, #b44a3a 0%, rgba(253, 29, 29, 0.921989) 50%, rgba(252, 81, 69, 0.787535) 100%);
 }
 
 .textofooter {
@@ -177,7 +177,7 @@ label {
   font-family: "Rubik", sans-serif;
   font-size: larger;
   font-weight: bolder;
-  background-color: linear-gradient(138deg, red 0%, rgba(240, 39, 39, 0.969608) 20%, rgba(199, 35, 35, 0.972409) 38%, rgba(201, 47, 30, 0.930392) 56%, rgba(220, 2, 2, 0.751121) 74%, rgba(255, 0, 0, 0.535434) 96%);
+  background: linear-gradient(158deg, #b44a3a 0%, rgba(253, 29, 29, 0.921989) 50%, rgba(252, 81, 69, 0.787535) 100%);
   border-radius: 2px;
   color: #f8f8f8;
 }
