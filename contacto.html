@@ -4,52 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="styles.css">
     <title> Contacto-Red Hot Chili Peppers</title> <!--Nombre de ventana -->
 </head>
-<body>   
-    <header>
-        <div class="sec-center">
-          <input class="dropdown" type="checkbox" id="dropdown" name="dropdown" />
-          <label class="for-dropdown" for="dropdown"
-            >Menu <i class="uil uil-arrow-down"></i
-          ></label>
-          <div class="section-dropdown">
-            <a class="aul" href="index.html">Inicio</a>
-            <a class="aul" href="galeria.html">Fotos</a>
-            <a class="aul" href="videos.html">Videos</a>
-            <a class="aul" href="informacion.html">Información</a>
-            <a class="aul" href="contacto.html">Contacto</a>
-          </div>
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-*" style="background: linear-gradient(158deg, rgba(180,74,58,1) 0%, rgba(253,29,29,0.921988863904937) 50%, rgba(252,81,69,0.7875350823923319) 100%); border-radius: 2px;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img src="images/Logo RHCP gif.gif" width="30" height="30"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+          <a class="nav-link" aria-current="page" href="informacion.html">Información</a>
+          <a class="nav-link" aria-current="page" href="galeria.html">Fotos</a>
+          <a class="nav-link" aria-current="page" href="videos.html">Videos</a>
+          <a class="nav-link" aria-current="page" href="contacto.html">Contacto</a>
         </div>
-      </header>
-    
-       
+      </div>
+    </div>
+  </nav>
+</header>
 
-      <div class="contact">
+
+<body>   
+  
+      <div class="contact"> 
         
-        <form id="form">
+        <form id="form"> 
             <!-- Nombre -->
-            <label for="name">Ingrese su nombre:</label>
+           <label for="name">Ingrese su nombre:</label>
             <input type="text" name="nombre" placeholder="Luciano" id="nombre" required> <br><br>
             <!-- Email -->
-            <label for="email">Ingrese su email:</label>
-            <input type="email" name="correo" placeholder="ejemplo@email.com" id="correo" required><br><br>
+           <label for="email">Ingrese su email:</label>
+            <input type="email" name="correo" placeholder="ejemplo@email.com" id="correo" required><br><br> 
             <!-- Mensaje -->
-            <label for="mensaje">Ingrese su mensaje:</label> <br>
+           <label for="mensaje">Ingrese su mensaje:</label> <br>
             <textarea name="mensaje" cols="30" rows="10" placeholder="Hola, deje su mensaje." id='mensaje'
-                required></textarea><br><br>
+                required></textarea><br><br> 
             <!-- Boton -->
-            <input type="submit" id="button" value="Enviar mensaje">
-        </div>
+             <input type="submit" id="button" value="Enviar mensaje">
+        </div> 
 
-    </main>
+  
     
     
 
-    <div class="googlemaps">
+   <div class="googlemaps">
     
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13105.828244085555!2d-58.159986033898925!3d-34.79444117985769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a327b3a8440f2b%3A0xa30e6e198e38547f!2sCountry%20Las%20Acacias%20de%20Hudson!5e0!3m2!1ses-419!2sar!4v1645657576870!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13105.828244085555!2d-58.159986033898925!3d-34.79444117985769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a327b3a8440f2b%3A0xa30e6e198e38547f!2sCountry%20Las%20Acacias%20de%20Hudson!5e0!3m2!1ses-419!2sar!4v1645657576870!5m2!1ses-419!2sar" width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
     </div>
 
@@ -96,7 +106,11 @@
                 </script>
 
                
-               
+<script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+crossorigin="anonymous"
+></script>          
 
 </body>
 </html>
