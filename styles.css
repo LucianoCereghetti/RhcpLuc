@@ -58,10 +58,10 @@ body {
   clear: none;
   width: 100%;
   height: 25px;
-  background-color: #e3170a;
+  background-color: linear-gradient(138deg, red 0%, rgba(240, 39, 39, 0.969608) 20%, rgba(199, 35, 35, 0.972409) 38%, rgba(201, 47, 30, 0.930392) 56%, rgba(220, 2, 2, 0.751121) 74%, rgba(255, 0, 0, 0.535434) 96%);
 }
 
-#footer .textofooter {
+.textofooter {
   font-family: "Rubik", sans-serif;
   position: relative;
   -webkit-animation-name: footer;
@@ -177,9 +177,9 @@ label {
   font-family: "Rubik", sans-serif;
   font-size: larger;
   font-weight: bolder;
-  background-color: #e3170a;
+  background-color: linear-gradient(138deg, red 0%, rgba(240, 39, 39, 0.969608) 20%, rgba(199, 35, 35, 0.972409) 38%, rgba(201, 47, 30, 0.930392) 56%, rgba(220, 2, 2, 0.751121) 74%, rgba(255, 0, 0, 0.535434) 96%);
   border-radius: 2px;
-  color: #f3f3f5;
+  color: #f8f8f8;
 }
 
 input {
