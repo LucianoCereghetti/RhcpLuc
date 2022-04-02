@@ -13,24 +13,15 @@ body {
   font-weight: 500;
   font-size: 15px;
   line-height: 1.4;
-  color: #fff;
-  overflow-x: hidden;
-  background-position: left;
-  background-repeat: repeat;
-  background-size: 4%;
-  width: 100%;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
+
   flex-wrap: wrap;
-  -ms-flex-pack: center;
-  justify-content: flex-start;
-  padding-top: 10px;
-  padding-bottom: 300px;
+  overflow-x: hidden;
+  
+  background: repeat;
   background-image: url(https://media1.giphy.com/media/WiFW385Xj52A4qPgmS/giphy.gif?cid=790b7611be582ac1503baf3c8023c29c6b5c7913e795a343&rid=giphy.gif&ct=g);
   background-size: cover;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   padding: 0;
   margin: 0;
 }
@@ -50,18 +41,22 @@ body {
   clear: none;
   width: 100%;
   height: 25px;
-  background: linear-gradient( 158deg, rgba(180, 74, 58, 1) 0%, rgba(253, 29, 29, 0.921988863904937) 50%, rgba(252, 81, 69, 0.7875350823923319) 100% );
+  background: linear-gradient(
+    158deg,
+    rgba(180, 74, 58, 1) 0%,
+    rgba(253, 29, 29, 0.921988863904937) 50%,
+    rgba(252, 81, 69, 0.7875350823923319) 100%
+  );
 }
-  .textofooter {
-    font-family: "Rubik", sans-serif;
-    position: relative;
-    animation-name: footer;
-    animation-duration: 30s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-out;
-  }
-
-
+.textofooter {
+  font-family: "Rubik", sans-serif;
+  position: relative;
+  animation-name: footer;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+  color: #fff;
+}
 
 .image-grid {
   --gap: 16px;
@@ -122,32 +117,30 @@ body {
   }
 }
 
-
-
 .contact {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-
 }
 
-.googlemaps{
-padding-left: 100px;
-padding-top: 300px;
-}
+
 
 #form {
   padding-top: 300px;
- }
+}
 
 label {
   font-family: "Rubik", sans-serif;
   font-size: larger;
   font-weight: bolder;
-  background: linear-gradient( 158deg, rgba(180, 74, 58, 1) 0%, rgba(253, 29, 29, 0.921988863904937) 50%, rgba(252, 81, 69, 0.7875350823923319) 100% );
+  background: linear-gradient(
+    158deg,
+    rgba(180, 74, 58, 1) 0%,
+    rgba(253, 29, 29, 0.921988863904937) 50%,
+    rgba(252, 81, 69, 0.7875350823923319) 100%
+  );
   border-radius: 2px;
   color: #f8f8f8;
-  
 }
 
 input {
@@ -178,12 +171,7 @@ a {
     animation-timing-function: ease-out;
   }
 
-
-  .googlemaps {
-    padding-left: 25px;
-    padding-top: 0px;
-    width: 550px;
-  }
+ 
 
   .parent {
     display: grid;
@@ -303,4 +291,3 @@ a {
   outline: 0;
   transition: transform 0.3s ease-in-out;
 }
-
